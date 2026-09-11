@@ -1,6 +1,12 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
+  allowedDevOrigins: [
+    "192.168.1.240",
+    "127.0.0.1",
+    "192.168.1.*",
+    "localhost",
+  ],
   images: {
     dangerouslyAllowSVG: true,
     contentDispositionType: "attachment",
